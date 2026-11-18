@@ -1,0 +1,56 @@
+/*
+ * LoopLogic Leaflet compatibility styles.
+ * Local minimum layout styles, independently written for the subset of
+ * Leaflet 1.9.4 used here: raster tiles, circle overlays, tooltips and zoom.
+ * This CSS avoids relying on a third-party stylesheet. Map tiles themselves
+ * still require a network connection to OpenStreetMap.
+ */
+.leaflet-container { position:relative; overflow:hidden; background:#dfeae9; outline:0; font-family:Arial,Helvetica,sans-serif; cursor:grab; touch-action:none; }
+.leaflet-container.leaflet-dragging { cursor:grabbing; }
+.leaflet-pane,.leaflet-map-pane,.leaflet-tile,.leaflet-tile-container,
+.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-image-layer,
+.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box {
+  position:absolute; left:0; top:0;
+}
+.leaflet-pane { z-index:400; }
+.leaflet-tile-pane { z-index:200; }
+.leaflet-overlay-pane { z-index:400; }
+.leaflet-shadow-pane { z-index:500; }
+.leaflet-marker-pane { z-index:600; }
+.leaflet-tooltip-pane { z-index:650; }
+.leaflet-popup-pane { z-index:700; }
+.leaflet-map-pane canvas { z-index:100; }
+.leaflet-map-pane svg { z-index:200; }
+.leaflet-tile { visibility:hidden; max-width:none!important; max-height:none!important; user-select:none; -webkit-user-drag:none; }
+.leaflet-tile-loaded { visibility:inherit; }
+.leaflet-zoom-animated { transform-origin:0 0; }
+.leaflet-zoom-hide { visibility:hidden; }
+.leaflet-container .leaflet-overlay-pane svg,
+.leaflet-container .leaflet-marker-pane img,
+.leaflet-container .leaflet-shadow-pane img,
+.leaflet-container .leaflet-tile-pane img,
+.leaflet-container .leaflet-image-layer { max-width:none!important; max-height:none!important; }
+.leaflet-container .leaflet-overlay-pane svg { pointer-events:none; }
+.leaflet-container .leaflet-overlay-pane svg path { pointer-events:visiblePainted; }
+.leaflet-container .leaflet-control-container { position:relative; z-index:800; }
+.leaflet-top,.leaflet-bottom { position:absolute; z-index:1000; pointer-events:none; }
+.leaflet-top { top:0; }
+.leaflet-right { right:0; }
+.leaflet-bottom { bottom:0; }
+.leaflet-left { left:0; }
+.leaflet-control { position:relative; z-index:800; pointer-events:auto; margin:10px; clear:both; }
+.leaflet-top .leaflet-control { margin-top:10px; }
+.leaflet-left .leaflet-control { margin-left:10px; }
+.leaflet-right .leaflet-control { margin-right:10px; }
+.leaflet-bottom .leaflet-control { margin-bottom:10px; }
+.leaflet-bar { border:2px solid rgba(0,0,0,.18); border-radius:6px; background:#fff; overflow:hidden; box-shadow:0 1px 5px #0002; }
+.leaflet-bar a { display:block; width:30px; height:30px; line-height:30px; text-align:center; text-decoration:none; color:#263941; background:#fff; font:bold 20px/30px Arial,sans-serif; border-bottom:1px solid #ddd; }
+.leaflet-bar a:last-child { border-bottom:none; }
+.leaflet-bar a:hover { background:#f3f7f4; }
+.leaflet-bar a.leaflet-disabled { color:#aaa; background:#f2f2f2; }
+.leaflet-control-attribution { background:#ffffffe8; padding:0 5px; color:#38464d; font:10px/1.6 Arial,sans-serif; }
+.leaflet-control-attribution a { color:#176f82; text-decoration:none; }
+.leaflet-tooltip { position:absolute; padding:6px 9px; background:#fff; border:1px solid #d1ded7; border-radius:5px; box-shadow:0 2px 9px #0003; white-space:nowrap; color:#1f3640; font:12px/1.35 Arial,sans-serif; pointer-events:none; }
+.leaflet-tooltip-top:before,.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before { display:none; }
+.leaflet-interactive { cursor:pointer; }
+.leaflet-container .leaflet-interactive { pointer-events:visiblePainted; }

@@ -1,0 +1,2 @@
+# Runtime: Python 3.10+ standard library only.
+# Optional development: Node.js for npm test; Chromium+Playwright for isolated UI test.

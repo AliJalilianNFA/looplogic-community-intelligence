@@ -1,0 +1,9 @@
+# LoopLogic v7 — Judge demonstration guide
+
+1. **Resident journey (~45 seconds):** Open Jordan demo persona, explain multiple needs and ranked public-program references. Trigger Rent Supplement six-question screening with fictional answers and show restored six-task checklist and 57.5% calculated rent-to-gross-income indicator. Say "not an official eligibility decision".
+2. **Partner Intelligence (~60 seconds):** Show the working Halifax OpenStreetMap, three synthetic map layers and Fairview inspector. Explain synthetic figures are used only for prototype operation. Scroll to **From demo gaps to observed geography**. After **Sync public data**, switch to a real 2021 DA population polygon, stop proximity and evening GTFS departures; click a polygon and reveal an evidence inspector. If feeds are unavailable, show the provenance and source status rather than inventing numbers.
+3. **Service/route experiment (~30 seconds):** Select a published provider and run an exploratory direct scheduled GTFS check. Clearly say it's a 45-minute screening candidate based on radial walking—not a verified point-to-point journey.
+4. **Decision Lab (~30 seconds):** Select a transit stop, adjust the number of weeks, per-session cost and household capacity. Explain cost per potential visit and why hypothetical capacity is not confirmed participants or impact. Compare to old synthetic gap lab.
+5. **Government Studio (~30 seconds):** Show separately labeled real census/transit evidence, synthetic allocation model, and optional AI explanation. Highlight the pipeline: resident support → ethical, de-identified operational evidence (future) → partner planning → policy monitoring.
+
+Suggested judge answer to data quality: "The physical map and retrieved public 2021 DA / transit stop inputs are genuine when synced; our historic request counts, gaps, costs and pilot outcomes remain modeled assumptions. Every insight displays the provenance and caveats." 
